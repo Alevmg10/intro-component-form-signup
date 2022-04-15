@@ -49,7 +49,10 @@ body {
     height: 400px;
     padding: 40px 40px;
     border-radius: 10px;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 3px 0px;
+    /* box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.66); */
 }
 
 form {
@@ -66,13 +69,15 @@ input  {
 }
 
 input:focus {
-    border: solid 2px hsl(248, 32%, 49%);
+    outline: none;
+    border: ridge 2px hsl(248, 32%, 49%);
 }
 
 input[type=submit] {
     border: none;
     background-color: hsl(154, 59%, 51%);
     color: #fff;
+    box-shadow: inner 0 0 2px rgba(0, 0, 0, 0.10);
 }
 
 input[type=submit]:hover {
