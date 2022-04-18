@@ -21,10 +21,22 @@
             </div>
             <div class="form-container">
                 <form>
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="password" placeholder="Password" required>
+                    <div class="input-icon-container">
+                        <input type="text" placeholder="First Name" required="first name cannot be empty" >
+                        <img src="./images/icon-error.svg" >
+                    </div>
+                    <div class="input-icon-container">
+                        <input type="text" class="icon" placeholder="Last Name" required>
+                        <img src="./images/icon-error.svg" >
+                    </div>
+                    <div class="input-icon-container">
+                        <input type="email" class="icon" placeholder="Email Address" required>
+                        <img src="./images/icon-error.svg" >
+                    </div>
+                    <div class="input-icon-container">
+                        <input type="password" class="icon" placeholder="Password" required>
+                        <img src="./images/icon-error.svg" >
+                    </div>
                     <input type="submit" value="CLAIM YOUR FREE TRIAL" required>
                 </form>
             </div>
