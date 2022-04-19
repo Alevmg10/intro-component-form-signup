@@ -110,3 +110,12 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: hsl(154, 55%, 44%);
 }
+
+.input-icon-container msg {
+    color: hsl(0, 100%, 74%);
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    font-size: 14px;
+    font-family: inherit;
+}
