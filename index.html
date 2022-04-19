@@ -17,35 +17,36 @@
         
         <div class="wrapper">
             <div class="box">
-                <h5><strong>Try it free for 7 days</strong> then $20/mo. thereafter</h5>
+                <p><strong>Try it free for 7 days</strong> then $20/mo. thereafter</p>
             </div>
             <div class="form-container">
-                <form>
+                <form id="form">
                     <div class="input-icon-container">
-                        <input type="text" placeholder="First Name" required="first name cannot be empty" >
+                        <input id="first-name" type="text" placeholder="First Name">
                         <img src="./images/icon-error.svg" >
-                        <msg>Error Message</msg>
+                        <div class="msg"></div>
                     </div>
                     <div class="input-icon-container">
-                        <input type="text" class="icon" placeholder="Last Name" required>
+                        <input id="last-name" type="text" class="icon" placeholder="Last Name">
                         <img src="./images/icon-error.svg" >
-                        <msg>Error Message</msg>
+                        <div class="msg"></div>
                     </div>
                     <div class="input-icon-container">
-                        <input type="email" class="icon" placeholder="Email Address" required>
+                        <input id="email" type="text" class="icon" placeholder="Email Address">
                         <img src="./images/icon-error.svg" >
-                        <msg>Error Message</msg>
+                        <div class="msg"></div>
                     </div>
                     <div class="input-icon-container">
-                        <input type="password" class="icon" placeholder="Password" required>
+                        <input id="password" type="password" class="icon" placeholder="Password">
                         <img src="./images/icon-error.svg" >
-                        <msg>Error Message</msg>
+                        <div class="msg"></div>
                     </div>
-                    <input type="submit" value="CLAIM YOUR FREE TRIAL" required>
+                    <input type="submit" value="CLAIM YOUR FREE TRIAL">
                 </form>
             </div>
         </div>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
