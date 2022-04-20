@@ -18,26 +18,37 @@ function checkInputs(input, message) {
 
     if (firstNameValue === '') {
         setError(firstName, 'First Name cannot be empty');
+        document.getElementsByName('First Name')[0].placeholder="";
     } else {
         setSuccess(firstName);
+        document.getElementsByName('First Name')[0].placeholder="";
     }
 
     if(lastNameValue === '') {
         setError(lastName, 'Last Name cannot be empty');
+        document.getElementsByName('Last Name')[0].placeholder="";
+    } else {
+        setSuccess(lastName);
+        document.getElementsByName('Last Name')[0].placeholder="";
     }
 
     if(emailValue === '') {
         setError(email, 'Looks like this is not an email');
+        document.getElementsByName('Email')[0].placeholder='example@mail.com';
     } else if(!isEmail(emailValue)) {
-        setError(email, 'Use valid email format')
+        setError(email, 'Use valid email format');
+        document.getElementsByName('Email')[0].placeholder='example@mail.com';
     } else {
         setSuccess(email);
+        document.getElementsByName('Email')[0].placeholder='';
     }
 
     if(passwordValue === '') {
         setError(password, 'Password cannot be empty');
+        document.getElementsByName('Password')[0].placeholder="";
     } else {
         setSuccess(password);
+        document.getElementsByName('Password')[0].placeholder="";
     }
 }
 
@@ -48,6 +59,8 @@ function setError(input, message) {
     formControl.classList.add('error');
     formControl.classList.add('msg');
     formControl.classList.remove('success');
+
+    
 }
 
 function setSuccess(input) {
@@ -57,6 +70,7 @@ function setSuccess(input) {
     msg.innerText = '';
     formControl.classList.add('success');
     formControl.classList.remove('error');
+
 }
 
 function isEmail(email) {

@@ -151,3 +151,7 @@ body {
 .input-icon-container.error .msg {
     display: block;
 }
+
+.input-icon-container.error input[type=text]::placeholder {
+    color:hsl(0, 100%, 74%);
+}
